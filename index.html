@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CBQAP Downloads</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="brand brandRow">
+      <div class="brandLeft">
+        <div class="logoBox logoBoxLeft">
+          <img src="assets/cbqap-logo.png" alt="CB-QAP Logo" class="brandLogo" />
+        </div>
+
+        <div class="brandText">
+          <div class="brandTitle">
+            Clinical Biochemistry Quality Assurance Program
+          </div>
+          <div class="brandSub">TMH Proficiency Testing Services</div>
+        </div>
+      </div>
+
+      <div class="brandRight">
+        <div class="logoBox logoBoxRight">
+          <img src="assets/logo2.png" alt="National Cancer Grid" class="brandLogo" />
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="pageShell">
+    <section class="downloadCard">
+      <div class="badge">CBQAP Downloads</div>
+
+      <h1>Download Participant Documents</h1>
+
+      <p class="introText">
+        Please select the relevant program below to download the PDF document.
+      </p>
+
+      <div class="buttonGrid">
+        <a class="downloadButton" href="pdfs/tumor-markers.pdf" download>
+          Tumor Markers
+        </a>
+
+        <a class="downloadButton secondary" href="pdfs/electrophoresis.pdf" download>
+          Electrophoresis
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="cbqapFooter">
+    <div class="cbqapFooterInner">
+      <div class="cbqapFooterBlock footerCenter">
+        <div class="cbqapFooterTitle">
+          Clinical Biochemistry Quality Assurance Program
+        </div>
+        <div class="cbqapFooterText">TMH Proficiency Testing Services</div>
+        <div class="cbqapFooterText">
+          Department of Biochemistry | Tata Memorial Hospital
+        </div>
+      </div>
+
+      <div class="cbqapFooterBlock footerCenter">
+        <div class="cbqapFooterTitle">Contact</div>
+        <div class="cbqapFooterText">
+          Email: <a href="mailto:ncgcbqap@gmail.com">ncgcbqap@gmail.com</a>
+        </div>
+        <div class="cbqapFooterText">
+          Phone: 24177000 | Extension: 4339
+        </div>
+      </div>
+
+      <div class="cbqapFooterBlock footerCenter">
+        <div class="cbqapFooterTitle">Disclaimer</div>
+        <div class="cbqapFooterText">
+          This portal is intended only for invited CBQAP participants.
+          Downloaded documents are intended for participant guidance and
+          program-related use.
+        </div>
+      </div>
+    </div>
+
+    <div class="cbqapFooterBottom">
+      © <span id="year"></span> Clinical Biochemistry Quality Assurance Program. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
